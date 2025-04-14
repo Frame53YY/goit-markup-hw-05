@@ -488,7 +488,7 @@
           </p>
         </div>
         <div class="footer-link-container">
-          <h2 class="footer-links-header">Social media</h2>
+          <p class="footer-header">Social media</p>
           <ul class="team-soc-list">
             <li class="team-soc-item">
               <a
@@ -530,9 +530,28 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-container">
+          <p class="footer-header footer-form-header">Subscribe</p>
+          <form class="footer-form">
+            <label
+              ><input
+                class="footer-input"
+                type="email"
+                name="footer-email"
+                id="footer-email"
+                placeholder="E-mail"
+            /></label>
+            <button class="button footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="modal-backdrop is-open">
+    <div class="modal-backdrop">
       <div class="modal">
         <button class="close-btn">
           <svg class="close-btn-icon" width="8" height="8">
@@ -593,6 +612,26 @@
               id="user-text"
               placeholder="Text input"
             ></textarea>
+          </div>
+          <div class="check-field">
+            <input
+              class="modal-check hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+            />
+            <label class="modal-check-text" for="policy"
+              ><span class=""
+                ><svg class="icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the&nbsp;
+              <a
+                class="policy-link"
+                href="https://goit.global/ua/privacy-policy/"
+                >Privacy Policy</a
+              >
+            </label>
           </div>
           <button class="modal-btn button" type="submit">Send</button>
         </form>
